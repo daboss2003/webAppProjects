@@ -1,0 +1,270 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto' ,sans-serif;
+    height: 100vh;
+    width: 100vw;
+    font-size: 30px;
+}
+
+
+.link{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.link a{
+    text-decoration: none;
+    color: rgb(161, 161, 253);
+    font-size: medium;
+
+}
+
+.link a:hover{
+    transition: all ease-in-out 0.4s;
+    transform: scale(1.1);
+    text-decoration: underline;
+    color: purple;
+}
+
+
+
+ .span_container{
+    font-weight: bold;
+    font-weight: bolder;
+    font-size:2.5rem;
+    letter-spacing: -8px;
+    position: absolute;
+    left: 38%;
+    top: 20%;
+    
+}
+
+.span_container .red{
+    color: red;
+}
+
+.span_container .orange{
+    color: orange;
+}
+
+.span_container .blue{
+    color: blue;
+}
+
+.span_container .green{
+    color: green;
+}
+
+ .form{
+    display: block;
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    height: 40px;
+    border-radius: 20px;
+    outline-color:rgb(205, 231, 253) ;
+    text-align: center;
+}
+
+.button{
+position: absolute;
+top: 50%;
+display: flex;
+flex-direction: row;
+justify-content:center;
+width: 100%;
+}
+
+.button1{
+height: 30px;
+margin: 5px;
+border-radius: 3px;
+outline-color: aliceblue;
+margin-left: 3px;
+}
+.button1:hover{
+background-color: gainsboro;
+}
+
+.button2{
+height: 30px;
+margin: 5px;
+border-radius: 3px;
+outline-color: aliceblue;
+}
+
+.button2:hover{
+background-color: gainsboro;
+}
+
+.search{
+    position: absolute;
+    top: 42%;
+    left: 27%;
+    z-index: 1;
+    font-size: medium;
+    color: rgb(88, 88, 88);
+}
+
+.camera{
+    position: absolute;
+    top: 42%;
+    left: 67%;
+    z-index: 1;
+    font-size: medium;
+    color: transparent;
+    background: linear-gradient(blue,red,orange,green);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: bolder;
+}
+
+.mic{
+    position: absolute;
+    top: 42%;
+    left: 63%;
+    z-index: 1;
+    font-size: medium;
+    color: transparent;
+    background: linear-gradient(blue,red,orange,green);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: bolder;
+}
+
+
+.image{
+    position: absolute;
+    left: 75%;
+    bottom: -43%;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: skyblue;
+    z-index: 1;
+}
+
+.search2{
+    position: absolute;
+    font-size: medium;
+    top:42%;
+    left: 70%;
+    background: none;
+    border: none;
+    color: blue;
+}
+
+.search2:hover{
+    cursor: pointer;
+    font-size: large;
+    color: purple;
+}
+
+
+
+.advance_span_container{
+    font-weight: bold;
+    font-size:1rem;
+    letter-spacing: -3px;
+    position: absolute;
+    bottom: 89%;
+    right: 82%;
+    margin-bottom: 2%;
+
+  
+    
+}
+
+.advance_span_container .red{
+    color: red;
+}
+
+.advance_span_container .orange{
+    color: orange;
+}
+
+.advance_span_container .blue{
+    color: blue;
+}
+
+.advance_span_container .green{
+    color: green;
+}
+
+h3{
+    font-size: 0.8rem;
+    color: red;
+    
+}
+
+.main_container{
+    margin: 12%;
+ 
+}
+
+h4{
+    font-size: 0.7rem;
+    font-weight: normal;
+}
+
+
+.advance_container{
+    font-weight: normal;
+    font-size: 0.5rem;
+}
+
+.advance_container .inputs{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    align-items: center;
+
+}
+.advance_container .inputs input,select{
+    width: 60%;
+    height: 1rem;
+    outline-color: blue;
+    border: 2px solid #f8eeee;
+   
+}
+
+.advance_container .inputs input,select:hover{
+    background-color: #f9f9f9;
+}
+
+
+select{
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+
+.advance_container .inputs .to{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.blue{
+    color: blue;
+}
+
+.div{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.advance_container button{
+    width: 20%;
+    box-shadow:1px 1px 3px #f9f9f9;
+    height: 28px;
+    color: whitesmoke;
+    background-color: blue;
+    border: none;
+}

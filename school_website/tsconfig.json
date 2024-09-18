@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/UserCard.jsx", "src/components/Announcements.jsx", "src/components/AttendanceChart.jsx", "src/components/CountChart.jsx", "src/components/EventCalendar.jsx", "src/components/FinanceChart.jsx", "src/components/Menu.jsx", "src/components/BigCalender.jsx", "src/app/(dashboard)/list/teachers/page.jsx", "src/app/(dashboard)/list/teachers/[id]/page.jsx", "src/components/TableSearch.jsx", "src/components/Table.jsx", "src/components/Pagination.jsx", "src/components/FormModal.jsx", "src/components/forms/TeacherForm.jsx", "src/components/forms/StudentForm.jsx", "src/components/InputField.jsx", "src/components/Performance.jsx", "src/app/(dashboard)/list/students/[id]/page.jsx", "src/app/(dashboard)/list/students/page.jsx", "src/app/(dashboard)/list/parents/page.jsx", "src/app/(dashboard)/list/lessons/page.jsx", "src/app/(dashboard)/list/subjects/page.jsx", "src/app/(dashboard)/list/exams/page.jsx", "src/app/(dashboard)/list/events/page.jsx", "src/app/(dashboard)/list/results/page.jsx", "src/app/(dashboard)/list/announcements/page.jsx", "src/app/(dashboard)/list/assignments/page.jsx", "src/app/(dashboard)/list/classes/page.jsx"],
+  "exclude": ["node_modules"]
+}

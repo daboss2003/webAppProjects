@@ -1,0 +1,395 @@
+:root{
+    --primary-color:#4242f8;
+    --primary-bg-color: linear-gradient(#080808, #0a0808, #0c0b0b);
+    --primary-border: 1px solid #f5f5f5;
+    --secondary-color: #f5f5f5;
+    --box-shadow: 5px 5px 3px #3939f0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: var(--primary-bg-color);
+    color: var(--secondary-color);
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    margin-top: 30px;
+    margin-left: 20px;
+    justify-self: center;
+}
+
+.blue{
+    color: var(--primary-color);
+}
+
+.header{
+    margin: 10px 15px;
+    position: relative;
+}
+
+.header h1{
+    position: absolute;
+    left: 35%;
+    display: inline-block;
+    box-shadow: var(--box-shadow);
+   
+}
+
+.logo{
+    position: absolute;
+    top: -2%;
+    left: 1%;
+    font-size: 30px;
+    box-shadow: var(--box-shadow);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+.header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+nav li{
+    margin: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    nav li{
+        margin: 20px;
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    nav li{
+        margin: 12px;
+        font-size: 19px;
+    }
+}
+
+.header .nav a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: color 1s;
+}
+
+.header .nav ul li{
+    list-style-type: none;
+    margin-top: 10%;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 10%;
+    transition: all 1s;
+    
+}
+
+.nav a:hover{
+    color:var(--primary-color);
+
+}
+
+nav ul li:hover{
+    transform: translateY(-20%);
+   
+}
+
+.intro{
+    display: flex;
+    position: relative;
+    height: 80vh;
+}
+
+.intro h1{
+    text-align: center;
+    flex-basis: 50%;
+    padding-top:300px;
+}
+
+
+.intro div{
+    display: flex;
+    justify-self: center;
+    flex-basis: 50%;
+    background-position: center;
+    background-image: url(my-img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(-20%);
+    
+}
+
+
+.about__container{
+   display: flex;
+   justify-content: center;
+  height: 90%;
+}
+
+
+.about{
+  position: relative;
+}
+
+.about .pic{
+    position: absolute;
+   
+}
+
+.about .pic img{
+    width: 100%;
+    border-radius: 20px;
+   
+}
+
+.about h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+
+
+}
+
+.about .hover{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.about .about__me{
+    position: relative;
+    padding-top: 50%;
+    width: 100%;
+    color: transparent;
+    transition: all 1s;
+    text-align: center;
+    
+}
+
+.about .about__me p{
+    padding-top: 5%;
+}
+
+
+
+.about .about__me:hover{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    height: 80%;
+    padding-top: 2%;
+    border-radius: 20px;
+}
+
+
+
+.flex #hobbies, .flex #dreams{
+    text-align: center;
+    margin-bottom: 30px;
+    flex-basis: 50%;
+    border: 3px solid var(--primary-color);
+    border-radius: 20px;
+    margin-right: 20px;
+    box-shadow: var(--box-shadow);
+    transition: all 1s;
+}
+
+.flex #hobbies:hover, .flex #dreams:hover{
+    transform: translateY(-10%);
+}
+
+
+#hobbies ol{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+#hobbies h3, #dreams h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    text-wrap: wrap;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+
+}
+
+@media  screen and (max-width:1000px) {
+    .flex{
+        flex-direction: column;
+    }
+}
+
+
+
+#likes{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#likes h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+tr,th,td{
+    border: 2px solid var(--primary-color);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+}
+
+#contact{
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right:20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#contact h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+#contact fieldset{
+    border: none;
+}
+
+#contact fieldset .container{
+    display: flex;
+    
+}
+@media screen and (max-width:1200px){
+    #contact fieldset .container{
+        flex-direction: column;
+    }
+}
+
+#contact fieldset .container .row1,#contact fieldset .container .row2{
+    flex-basis: 45%;
+}
+
+#contact fieldset .container .name{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+#contact fieldset .container .number{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+#contact fieldset .container .gender{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+#contact fieldset .container .like{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+#contact fieldset .container .review{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+label{
+    flex-basis: 30%;
+}
+
+input, textarea{
+    flex-basis: 60%;
+    border: none;
+    width: 100%;
+     padding-bottom: 30px;
+}
+
+#name, #number, textarea{
+    box-shadow: var(--box-shadow);
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button{
+    box-shadow: var(--box-shadow);
+    padding: 20px 50px;
+    border: 2px solid var(--primary-color);
+    margin-right: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--primary-color);
+    font-size: large;
+    transition: all 1s;
+}
+
+
+.buttons button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transform: translateY(-12px);
+}
+
+footer{
+    width: 100vw;
+    padding: 50px 10px;
+    margin-top: 40px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+
+}
+
+footer a{
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 5px 25px;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+footer a:hover{
+    color: rgb(163, 101, 21);
+}

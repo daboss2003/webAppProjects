@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="oluwafemi samson 
+        olawale">
+        <meta name="discription" content="Ordering Page">
+        <title>Order Your Tacos here</title>
+        <link rel="icon" href="Easy Ground Beef Tacos.png" type="image/x-icon">
+        <link rel="stylesheet" href="second.css" type="text/css">
+        <script src="food.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <h1  class="header_h1">Place Your Order Here</h1>
+            <nav class="header_nav">
+                <ul class="header_ul">
+                    <li>
+                        <a href="Takoweb.html">Homepage</a>
+                    </li>
+                    <li>
+                        <a href="#order">Place Your Order</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+        <figure>
+            <img src="The Best Ever Chicken Tinga Tacos.jpg"
+             alt="the world best taco" title="YUMMY AND Delisious"
+              height="300" width="1000">
+              <figcaption class="offscreen">
+                one try will confuse you
+              </figcaption>
+            </figure>
+        </section>
+        <main class="main">
+            <article class="main_article">
+            <h3>we open 7 days a week</h3>
+            <dl>
+                <dt>sunday-thursday</dt>
+                <dd>11am-9pm</dd>
+                <dt>friday and saturday</dt>
+                <dd>11am-11pm</dd>
+            </dl>
+            <hr>
+            <details>
+                <summary>
+                    <B>NOTE</B>
+                </summary>
+            you will need to enter your phone so that we can 
+                contact you
+            </details>
+            <hr>
+            <section id="order">
+                <h2 class="contact_h2">contact me to place your order</h2>
+                <p class="contact_p">i would relly like to here from you!</p>
+                <form action="https://httpbin.org/get" method
+                    ="get" class="contact_form">
+                <fieldset class="contact_fieldset">
+                        <legend class="contact_legend">Personal Info</legend>
+                <p class="contact_p">
+                    <label for="firstName" class="contact_label">firstName</label>
+                    <input type="text" name="firstName" id="firstName"
+                    placeholder="SAMSON" autocomplete="on" class="contact_input"
+                    required autofocus>
+                </p> 
+                <p class="contact_p"> 
+                    <label for="lastname" class="contact_label">lastName</label>
+                    <input type="text" name="lastname" id ="lastname"
+                    placeholder="femi" autocomplete="on"  class="contact_input"
+                    required>
+                </p>
+                <p class="contact_p"> <label for="password" class="contact_label">password</label>
+                    <input type="password" name="password" id ="password" class="contact_input"
+                    placeholder="enter a secrete number" 
+                    required>
+                </p>
+                <p class="contact_p"> <label for="PHONE" class="contact_label">PHONE</label>
+                    <input type="tel" name="PHONE" id ="PHONE"
+                    placeholder="5555555555"
+                    pattern="[0-9]{3}[o-9]{3}[0-9]{4}" class="contact_input"
+                    required>
+                <p class="contact_p"> <label for="decade" class="contact_label">Favourite decade</label>
+                    <input type="number" name="decade" id ="decade" class="contact_input"
+                min="1950" max="2020" step="10" value="1980">
+                </p>
+                <p class="contact_p">
+            <label for="taco" class="contact_label">favourite taco:</label>
+                <select name="taco" id="taco"
+                multiple size="2" class="contact_select">
+                    <optgroup label="tacos">
+                    <option value=" crunchy taco">crunchy taco</option>
+                    <option value="soft taco">soft taco</option>
+                </optgroup>
+                </select>
+            </p>
+            <p class="contact_p">
+                <select name="price" id="price" multiple size="3" class="contact_select">
+                    <optgroup label="price">
+                        <option value="2pices for $3.00">2pices for $3.00</option>
+                        <option value="5pices for $6.00">5pices for $6.00</option>
+                    </optgroup>
+                </select>
+            </p>
+                <legend class="contact_legend">Send Me a Note</legend>
+                <p class="contact_p">
+                    <label for="message" class="contact_label">for your message:</label>
+                </p>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10"
+                placeholder="type your message here" class="contact_textarea"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit" class="contact_button">submit</button>
+            <button type="submit" formaction=
+            "https://httpbin.org/post" formmethod="post" class="contact_button">post</button>
+            <button type="reset" class="contact_button">reset</button>
+        </form>
+        </section>
+            <li>
+                contact me at <a href="random@mail.com">my email address</a>
+            </li>
+            <li>
+                Dail <a href="tel:+234-9024071583">my phone number</a>
+            </li>
+        </article>
+        <p class="center">
+            <a href="#">Back to top</a>
+        </p>
+    </main>
+            <footer class="footer">
+                <p><span class="nowrap">Copyright <time id="year"></time> </span> &copy;<span class="nowrap">Daboss plc</span></p>
+            </footer>
+        </body>
+    </html>
